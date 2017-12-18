@@ -1,0 +1,584 @@
+@font-face {
+	font-family: "Stencil";
+	src: url(../sources/fonts/stencil.ttf),
+       url("../sources/fonts/stencil.eot?#iefix") format("embedded-opentype");
+        font-weight: normal;
+    font-style: normal
+}
+*{
+	padding:0;
+	margin:0;
+}
+body {
+	font-family: Stencil,sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	box-sizing: border-box;
+	background-image: url(http://localhost/phpsushisite/sources/images/body_bg.png);
+	-webkit-background-size: 100vw 100vh;
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	line-height: 0 !important;
+
+}
+label{
+	margin:0!important;
+}
+header{
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+}
+header a{
+	color:#fff;
+}header a:hover{
+	color:inherit;
+	text-decoration: inherit;
+}
+header a:link{
+	color:inherit;
+	text-decoration: inherit;
+}
+header a:visited{
+	color:inherit;
+	text-decoration: inherit;
+}
+/*------index-------*/
+/*------index-------*/
+/*------index-------*/
+/*------index-------*/
+.reg_menu_btns{
+	vertical-align: bottom;
+	text-align: right;
+	font-size: 20px;
+	line-height: 20px;
+	color: #ada08e;
+	margin: 10px;
+}
+.logopic{
+	margin: 10px;
+	margin: auto;
+	position: absolute;
+	z-index: 100;
+ }
+.logo{
+	margin-top: 10px;
+	display: inline-block;
+	position: relative;
+	width: 156px;
+	height:143px;
+	text-align: left;
+}
+.logorow{
+	line-height: 0px;
+	text-align: center;
+}
+.main_menu{
+margin-top: -10px;
+margin-bottom:-10px;
+}
+.menu_row{
+	position: relative;
+	text-align: center;
+	background-image: url(http://localhost/phpsushisite/sources/images/menu_bg.png);
+	height:77px;
+	background-position:center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+.menu_row>.main_menu_list{
+    position: relative;
+        z-index:10;
+	list-style-type: none;
+	display: inline-block;
+	line-height: 67px;
+	margin-bottom: -10px;
+}
+.menu_row>.main_menu_list li{
+font-size: 25px;
+color:#fff0de;
+	font-weight:bold;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	padding: 0px 20px;
+}
+.menu_row #menu_slide_btn img{
+    display:none;
+    margin-top:15px;
+    margin-left:7%;
+    height:30px;
+    width:30px;
+}
+.menu_row>.main_menu_list li:hover{
+font-size: 25px;
+color:#fbdab3;
+}
+.slider_container{
+	text-transform: uppercase;
+	position: relative;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+.slider_container img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.slider_btns{
+	text-align: center;
+	margin: 15px 0;
+
+}
+.slider_btns>input{
+	display: none;
+}
+.slider_btns>input:checked+label{
+	background-color: gray;
+}
+.slider_btns>label{
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border:1px solid;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 10px 2px;
+}
+.main_slider .slider_wrap .visible_slide{
+	display: block;
+	transition: opacity 1s ease-in;
+		-webkit-animation: slideFading;
+	-o-animation: slideFading;
+	animation: slideFading;
+	animation-duration: 1s;
+
+}
+.main_slider .slider_wrap{
+overflow:hidden;	
+}
+@keyframes slideFading {
+from {
+opacity: 0.7;
+}
+to {
+opacity: 1;
+}
+}
+@keyframes slideFading1 {
+from {
+margin-left: 0px;
+
+}
+to {
+margin-left: -100%;
+margin-right:100%;
+}
+}
+.main_slider .slides{
+			-webkit-animation: slideFading1;
+	-o-animation: slideFading1;
+	animation: slideFading1;
+	animation-duration: 1s;
+	display: none;
+}
+.slider_container>.slider_table_cell{
+display: table-cell;
+height: inherit;
+vertical-align: middle;
+}
+.slider_container>.slider_table_cell>.slider_text{
+	float: left;
+	margin-left: 25px;
+	display: inline-block;
+	position: relative;
+}
+.slider_container>.slider_table_cell>.slider_text #str1{
+	font-size: 25px;
+	color: #c2a98a;
+	line-height: 25px;
+
+}
+.slider_container>.slider_table_cell>.slider_text #str2,#str3,#str4{
+	font-size: 55px;
+	line-height: 60px;
+}
+.slider_container>.slider_table_cell>.slider_text #str2{
+	color: #d47704;
+}
+.slider_container>.slider_table_cell>.slider_text #str3{
+	color: #b53a02;
+}
+.slider_container>.slider_table_cell>.slider_text #str4{
+	color: #c2a98a;
+}
+.slider_container #orderbtn{
+	display: none;
+}
+.slider_container #orderlbl::selection {
+background: transparent; /* Safari */
+}
+.slider_container #orderlbl{
+	font-weight: bold;
+	display: inline-block;
+	background-color: #740900;
+	border:1px #991401 solid;
+	font-size: 30px;
+	margin-top: 15px;
+	line-height: 45px;
+	color: #e0cfb9;
+	padding: 0 10px;
+}
+
+.slider_container #orderlbl:hover {
+	cursor: pointer;
+background: #9c0e02; /* Safari */
+}
+.mid_subscr_class{
+	height:inherit;
+	display: table;
+}
+.subscribe_bg{
+		background-image: url(http://localhost/phpsushisite/sources/images/subscr_bg.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.subscribe_section{
+	text-align: center;
+	height:285px;
+
+}
+.subscribe_section .offer_table{
+	text-align: center;
+	height:99%;
+	width:90%;
+	margin-left: 20px;
+	line-height: 20px;
+}
+.subscribe_section .offer_table tr td:nth-child(1){
+	width:30%;
+	line-height: 20px;
+
+}
+.subscribe_section .offer_table tr td:nth-child(1) img{
+	width:135px;
+	height: 145px;
+
+}
+.subscribe_section .offer_table tr td:nth-child(2){
+	width:70%;
+	line-height: 20px;
+	text-align: left;
+	
+}
+
+.subscribe_section .offer_table tr td span:nth-child(1){
+
+text-transform: uppercase;
+color: #4b4033;
+font-size: 24px;
+}
+.subscribe_section .offer_table tr td span:nth-child(3){
+
+text-transform: uppercase;
+color: #b53502;
+font-size: 36px;
+}
+.subscribe_section .offer_table tr td span:nth-child(5){
+
+text-transform: none;
+color: #4b4033;
+font-size: 14px;
+}
+.subscribe_section label{
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #ead3b6;
+	line-height: 20px;
+	padding: 10px;
+	background-color: #7b1000;
+	border-radius: 5px;
+}
+.subscribe_section input[type="button"]{
+	display: none;
+}
+.subscribe_section label::selection {
+background: transparent; /* Safari */
+}
+.subscribe_section label:hover {
+background: #9c0e02; /* Safari */
+}
+.subscribe_section label[for="subscribe_btn"]:hover {
+background: #cf1000; /* Safari */
+}
+.subscribe_section input[type="text"]{
+	font-size: 30px;
+	width: 220px;
+	text-transform: none;
+	box-sizing: border-box;
+	border: none;
+	vertical-align: middle;
+
+}
+.subscribe_section input[type="text"]:focus{
+	outline: none;
+}
+.subscr_class{
+	display: table-cell;
+	vertical-align: middle;
+}
+.subscribe_section .subscr_input{
+	display: inline-block;
+	height: auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+ .mid_subscr_class .border_class{
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	height: 100%;
+}
+.mid_subscr_class .border_class .border_slash{
+		width: 1px;
+	height: 67%;
+	margin: auto;
+		border-left: 1px solid rgba(100, 100, 100, .3);
+}
+/*--------------------reg.php----------------------*/
+/*--------------------reg.php----------------------*/
+/*--------------------reg.php----------------------*/
+.reg_section .reg_container{
+	z-index: 0;
+	position: absolute;
+	margin-top: 50px;
+	left: 50%;
+	width: 350px;
+	height: 350px;
+	border:4px ridge #1f1e1e;
+	transform: translate(-50%,0%);
+	background-color: #000;
+	background-image: url(http://localhost/phpsushisite/sources/images/reg-bg.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: left;
+}
+.reg_section .reg_container p[class="errors"]{
+    font-family: Arial, sans-serif;
+    color:red;
+    text-align: left;
+    padding:10px;
+    font-size:20px;
+}
+.reg_section .reg_container form{
+	text-transform: uppercase;
+	color: #d36c3e;
+	text-align: left;
+	height: inherit;
+}
+.reg_section .reg_container label{
+	font-family: sans-serif;
+	font-size: 12px;
+	position: relative;
+	line-height: 40px;
+	width: 45%;
+	text-align: right;
+	padding-bottom: 10px;
+}
+.reg_section .reg_container input[type="text"],input[type="password"]{
+	color: #000;
+	outline-color: #d36c3e!important;
+	font-size: 16px;
+	width: 45%;
+	font-family: sans-serif;
+        line-height: 20px;
+        padding-left:4px;
+}
+.reg_section .reg_container input[type="text"]:hover ,input[type="password"]:hover {
+	outline-color: #d36c3e;
+	border: #d36c3e 1px solid;
+	}
+.reg_section .reg_container .reg_forms_wrap{
+	vertical-align: middle;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.reg_section .reg_container .reg_forms{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.reg_section .reg_container input[type="submit"]{
+display: none;
+}
+.reg_section .reg_container label[for="reg_btn"]{
+	text-align: center;
+	background-color: #b24311;
+	color:white;
+	width: auto;
+	padding: 2px 8px;
+	border-radius: 2px;
+	margin-top: 20px!important;
+}
+.reg_section .reg_container label[for="reg_btn"]:hover{
+
+	background-color:#9f3e13;
+}
+.reg_section .reg_container .reg_btn_lbl{
+	text-align: center;
+	text-transform: uppercase;
+}
+.reg_section .reg_container label[for="reg_btn"]::selection {
+background: transparent;
+}
+.reg_section .reg_container p{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+/*--------------------menu.php----------------------*/
+/*--------------------menu.php----------------------*/
+/*--------------------menu.php----------------------*/
+.sushi_menu ul li a{
+    color:inherit;
+}
+ #add_item{
+	font-size: 25px;
+	line-height:30px;
+	background: darkred;
+	padding:5px;
+}
+ #add_item:hover{
+	cursor: pointer;
+	background:red;
+}
+.sushi_menu ul li a{
+    color:inherit;
+    text-decoration: inherit;
+}
+.sushi_menu ul li{
+	margin-left: 15px;
+	color: #eedac0;
+	font-size: 30px;
+	line-height: 40px;
+	list-style:none;
+	margin-top: 5px;
+	
+}
+.sushi_menu ul li:first-child{
+	margin-top: 0;
+	margin-left: 0;
+	font-size: 45px;
+	text-align: center;
+	background-color: #131211;
+	color: #dd6c11;
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+.sushi_menu{
+	margin-top: 20px;
+	background-color: #1b1a19;
+	border:#954e02 1px dashed;
+}
+.sushi_menu ul li img{
+	width: 30px;
+	height: 30px;
+}
+.sushi_menu ul li:first-child:hover{
+	color: #dd6c11;
+	cursor:default;
+}
+.sushi_menu ul li:hover{
+	cursor: pointer;
+	color: #eed1ab;
+}
+.sushi_menu ul li img{
+	display: none;
+}
+.sushi_menu ul li:hover img{
+	display:inline;
+}
+.MenuItemWrap{
+    margin:20px;
+    padding: 10px;
+    display: inline-block;
+    line-height: 30px;
+    font-size:28px;
+    border: 1px dashed orange;
+    color: #eedac0;
+    min-width: 200px;
+    
+}
+.MenuItemWrap p{
+    display: block;
+    text-align: center;
+    
+    
+}
+.MenuItemWrap .MenuItemPic{
+    margin:10px 5px;
+text-align: center;
+    display: block;
+}
+.MenuItemWrap .MenuItemPic img{
+width:150px;
+height:150px;
+    
+}
+.MenuItemWrap p img{
+    margin-left: 10px; 
+}
+.MenuItemWrap span{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+/*-------------gallery------------------*/
+/*-------------gallery------------------*/
+/*-------------gallery------------------*/
+/*-------------gallery------------------*/
+/*-------------gallery------------------*/
+.photo_collection{
+    text-align: center;
+}
+.photo_collection .photo_collection_wrap{
+    margin-top:30px;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
+    width:100%;
+}
+
+.photo_collection .photo_collection_wrap img{
+    width:20%;
+    height:auto;
+    margin:1%;
+    border:1px solid darkorange;
+}
+/*------------------contacts---------------------*/
+.contacts_section p{
+    font-family:Arial, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    color:white;
+    padding: 30px;
+}
+.contacts_section p span{
+    text-decoration: underline;
+}

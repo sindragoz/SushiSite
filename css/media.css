@@ -1,0 +1,109 @@
+@media screen and (max-width: 1200px) {
+   .menu_row>.main_menu_list li,li:hover{
+font-size: 18px!important;
+line-height: 50px!important;
+
+}
+.main_menu .menu_row{
+    height:60px;
+}
+}
+@media screen and (max-width: 992px) {
+      .menu_row>.main_menu_list li,li:hover{
+font-size: 15px!important;
+line-height: 60px!important;
+
+}
+.main_menu .menu_row{
+    height:55px;
+}
+.mid_subscr_class:nth-child(2){
+    display:none!important;
+}
+}
+@media screen and (max-width: 710px) {
+      .menu_row>.main_menu_list li,li:hover{
+         padding:0 10px!important;
+      }
+        .main_slider .slider_container{
+	height:300px!important;
+        
+}
+/*section .photo_collection .photo_collection_wrap{
+    margin-top:30px;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
+    width:100%;
+}
+*/
+ body .photo_collection .photo_collection_wrap img{
+    width:40%;
+    height:auto;
+    margin:2%;
+    border:1px solid darkorange;
+}
+section .slider_container>.slider_table_cell>.slider_text #str1{
+	font-size: 15px;
+	color: #c2a98a;
+	line-height: 15px;
+
+}
+section .slider_container>.slider_table_cell>.slider_text #str2,#str3,#str4{
+	font-size: 35px;
+	line-height: 40px;
+}
+
+section .slider_container>.slider_table_cell>.slider_text #str3{
+	font-size: 35px;
+	line-height: 40px;
+}
+
+}
+@media screen and (min-width: 621px) {
+    header .main_menu .menu_row .main_menu_list{
+        position:relative!important;
+    display:inline-block!important;
+    float:none!important;
+    height:55px!important;
+    transition:none!important;
+}
+header .main_menu .menu_row .main_menu_list li{
+    
+    display:inline-block;
+    float:left!important;
+}
+}
+@media screen and (max-width: 620px) {
+header .main_menu .menu_row .main_menu_list{
+    height:0;
+    position: absolute;
+    overflow:hidden;
+    float:none!important;
+    background:#000;
+    margin-top:10px;
+    left:0;
+}
+header .main_menu .menu_row .main_menu_list li{
+    
+    text-align: left;
+    display:list-item;
+    float:none!important;
+}
+header .main_menu .menu_row{
+    text-align: left;
+}
+header .menu_row #menu_slide_btn img{
+    display:inline-block;
+    
+}
+}
+@media screen and (max-width: 480px) {
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   #main-nav a {
+      font-size: 90%;
+      padding: 10px 8px;
+   }
+}
